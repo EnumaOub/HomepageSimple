@@ -10,9 +10,11 @@ header {
 
 header #img-container {
     position: relative;
-    animation: 1s appear-img;
 }
 
+header.animate #img-container {
+    animation: 1s appear-img;
+}
 
 
 header img {
@@ -38,6 +40,9 @@ header #description {
     display: flex;
     flex-direction: column;
     gap: .5rem;
+}
+
+header.animate #description {
     animation: 1s appear-descript;
 }
 
@@ -53,7 +58,7 @@ header #description .fa {
 
 @keyframes appear-img {
     from {
-        transform: translateX(-25%);
+        transform: translateX(-40%);
         opacity: 0;
     }
     to {

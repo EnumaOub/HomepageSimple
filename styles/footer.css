@@ -55,7 +55,7 @@ footer .fa {
 
 @keyframes appear-footer {
     from {
-        transform: translateY(25%);
+        transform: translateX(25%);
         opacity: 0;
     }
     to {
