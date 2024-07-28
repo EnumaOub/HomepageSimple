@@ -1,12 +1,32 @@
 footer {
-    position: fixed;
-    bottom: 0;
-    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem;
+    background-color: var(--secondary-color);
 }
 
-footer .fa {
-    color: var(--main-color);
-    font-size: 5rem;
-    opacity: .7;
-    text-decoration: none;
+footer img {
+    height: 15rem;
+    width: 20rem;
+    object-fit: cover;
+}
+
+footer .contact {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+footer .contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+footer .mail, footer .phone {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: .5rem;
 }

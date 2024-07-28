@@ -1,16 +1,43 @@
-header div {
+header {
     position: relative;
-    top: 0;
-    left: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 1rem 3rem;
+    background-color: var(--secondary-color);
 }
 
 
-header h1 {
-    font-size: 4rem;
-    margin-top: 0.5rem;
-    margin-left: 0.5rem;
+header img {
+    height: 12rem;
+    width: 10rem;
+    object-fit: cover;
+}
+header #img-container p {
+    position: absolute;
+    bottom: 10%;
+    left: 3%;
+    font-weight: bold;
+    color: var(--text-sec-color);
+    text-shadow: 0 5px 5px #000;
+}
+
+header #description {
+    background-color: var(--main-color);
+    color: var(--text-sec-color);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+
+}
+
+header #description .links {
+    display: flex;
+    align-self: flex-end;
+    gap: .5rem;
+}
+
+header #description .fa {
+    color: var(--text-sec-color);
 }
