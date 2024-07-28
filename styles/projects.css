@@ -22,6 +22,11 @@ main #projects .elem-project {
     flex-direction: column;
     align-items: center;
     box-shadow: var(--shadow-elevation-medium);
+    transition: transform 0.1s ease-in;
+}
+
+main #projects .elem-project:hover {
+    transform: scale(1.1);
 }
 
 main #projects .elem-project img {
@@ -52,4 +57,3 @@ main #projects .elem-project .links {
 main #projects .elem-project .fa {
     color: var(--text-sec-color);
 }
-

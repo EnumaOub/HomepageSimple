@@ -10,7 +10,10 @@ header {
 
 header #img-container {
     position: relative;
+    animation: 1s appear-img;
 }
+
+
 
 header img {
     min-height: 16rem;
@@ -19,7 +22,7 @@ header img {
 }
 header #img-container p {
     position: absolute;
-    top: 80%;
+    top: 85%;
     left: 50%;
     transform: translate( -50%, -50% );
     text-align: center;
@@ -35,6 +38,7 @@ header #description {
     display: flex;
     flex-direction: column;
     gap: .5rem;
+    animation: 1s appear-descript;
 }
 
 header #description .links {
@@ -47,8 +51,25 @@ header #description .fa {
     color: var(--text-sec-color);
 }
 
-@media only screen and (max-width: 1300px) {
+@keyframes appear-img {
+    from {
+        transform: translateX(-25%);
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 
+}
+
+@keyframes appear-descript {
+    from {
+        transform: translateX(25%);
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 
 }
 

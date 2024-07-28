@@ -50,3 +50,11 @@ a .fa {
     opacity: .7;
     text-decoration: none;
 }
+
+.fa {
+    opacity: 0.5;
+}
+
+.fa:hover {
+    opacity: 1;
+}

@@ -8,6 +8,10 @@ footer {
     box-shadow: var(--shadow-elevation-high);
 }
 
+footer.animate {
+    animation: 1s appear-footer;
+}
+
 footer #img-container {
     height: 20rem;
     width: 20rem;
@@ -48,6 +52,18 @@ footer .fa {
     color: var(--text-color);
 }
 
+
+@keyframes appear-footer {
+    from {
+        transform: translateY(25%);
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+
+}
+
 @media only screen and (max-width: 1000px) {
 
     footer {
@@ -55,6 +71,4 @@ footer .fa {
         gap: 1rem;
     }
 
-
-    
 }
