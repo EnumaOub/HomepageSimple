@@ -4,6 +4,8 @@ footer {
     align-items: center;
     padding: 1rem 3rem;
     background-color: var(--secondary-color);
+    gap: .5rem;
+    box-shadow: var(--shadow-elevation-high);
 }
 
 footer img {
@@ -15,7 +17,7 @@ footer img {
 footer .contact {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1rem;
 }
 
 footer .contact-info {
@@ -29,4 +31,21 @@ footer .mail, footer .phone {
     flex-direction: row;
     align-items: center;
     gap: .5rem;
+}
+
+footer .links {
+    display: flex;
+    gap: .5rem;
+}
+
+footer .fa {
+    color: var(--text-color);
+}
+
+@media only screen and (max-width: 650px) {
+
+}
+
+@media only screen and (max-width: 1000px) {
+
 }

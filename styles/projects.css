@@ -1,16 +1,15 @@
 main {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
     margin: 2rem;
 }
 
 main #projects {
     display: grid;
     grid-template-rows: repeat(auto-fit, minmax(10rem, 0.4fr));
-    grid-template-columns: repeat(3, minmax(20rem, 0.5fr));
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 0.5fr));
     gap: 2rem;
-    margin: 2rem;
+    margin: 0.5rem 2rem;
 }
 
 main #projects .elem-project {
@@ -21,6 +20,7 @@ main #projects .elem-project {
     display: flex;
     flex-direction: column;
     align-items: center;
+    box-shadow: var(--shadow-elevation-medium);
 }
 
 main #projects .elem-project img {
@@ -51,3 +51,4 @@ main #projects .elem-project .links {
 main #projects .elem-project .fa {
     color: var(--text-sec-color);
 }
+
